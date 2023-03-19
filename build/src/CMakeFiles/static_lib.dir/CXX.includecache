@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/json.h
+memory
+-
+string
+-
+unordered_map
+-
+vector
+-
+
+../include/jsonException.h
+stdexcept
+-
+
+../include/jsonValue.h
+variant
+-
+json.h
+../include/json.h
+jsonException.h
+../include/jsonException.h
+
+../include/parse.h
+json.h
+../include/json.h
+jsonException.h
+../include/jsonException.h
+
+/home/ulysses/Code/json_cpp/LeptJson/src/json.cpp
+cstdio
+-
+json.h
+/home/ulysses/Code/json_cpp/LeptJson/src/json.h
+jsonValue.h
+/home/ulysses/Code/json_cpp/LeptJson/src/jsonValue.h
+parse.h
+/home/ulysses/Code/json_cpp/LeptJson/src/parse.h
+
